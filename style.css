@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body, p, h1, h2, nav a {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #64b5f6;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(90deg, #64b5f6 0%, #2196f3 100%);
+    top: 0;
+    width: 100%;
+    padding: 12px 30px; 
+    font-size: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b3e5fc, #81d4fa), url('./assets/images/your-background-image.jpg') no-repeat center center/cover;
+    color: aliceblue;
+    padding: 180px 0;
+    gap: 100px;
+}
+
+.home-container h2 {
+    color: aliceblue;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.programmer-image {
+    height: auto;
+    width: 400px;
+}
+
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile {
+    width: 200px;
+    margin: 150px 0 50px;
+}
+
+.bio {
+    width: 50%;
+    margin-top: 25px;
+}
+
+
+
+.skills-container {
+    display: block;
+    justify-content: center;
+}
+
+.soft-hard-skills {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin: 50px;
+    gap: 200px;
+}
+
+.soft-hard-skills ul p {
+    font-weight: bold;
+    margin: 20px;
+}
+
+.programming-language-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.programming-language-top img {
+    height: auto;
+    width: 70px;
+}
+
+.programming-language-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.programming-language-bottom img {
+    height: auto;
+    width: 70px;
+    margin-bottom: 50px;
+}
+
+
+
+.footer {
+    background-color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer ul li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social a {
+    color: rgb(0, 123, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social {
+    margin-right: -140px;
+}
+
+.social a:hover {
+    color: black;
+}
+
+.footer-section {
+    font-weight: bold;
+}
+
+.community a {
+    color: rgb(0, 123, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.community a:hover {
+    color: black;
+}
+
+
+
+hr {
+    border-top: 3px solid #cce7e7;
+    width: 20%;
+    margin: 100px auto;
+}
+
+
+
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body, p, h1, h2, nav a {
+        font-size: 1.2rem; 
+    }
+
+    h1 {
+        font-size: 6rem; 
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
